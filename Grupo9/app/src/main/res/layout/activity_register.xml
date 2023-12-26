@@ -10,7 +10,20 @@
         android:id="@+id/TextNombre"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:layout_marginTop="260dp"
+        android:layout_marginTop="248dp"
+        android:ems="10"
+        android:hint="Nombre"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/TextUsuario"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="304dp"
         android:ems="10"
         android:hint="Usuario"
         android:inputType="text"
@@ -23,10 +36,23 @@
         android:id="@+id/TextContra"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="56dp"
         android:ems="10"
         android:hint="Contraseña"
         android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TextNombre" />
+
+    <EditText
+        android:id="@+id/textEdad"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="112dp"
+        android:ems="10"
+        android:hint="Edad"
+        android:inputType="number"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -45,26 +71,13 @@
         app:srcCompat="@drawable/user" />
 
     <Button
-        android:id="@+id/buttonLogin"
-        style="@android:style/Widget.Material.Light.Button.Toggle"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="52dp"
-        android:background="@color/gris"
-        android:backgroundTintMode="add"
-        android:text="LOGIN"
-        app:layout_constraintTop_toBottomOf="@+id/TextContra"
-        tools:layout_editor_absoluteX="0dp" />
-
-    <Button
         android:id="@+id/buttonRegister"
         style="@android:style/Widget.Material.Light.Button.Toggle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="120dp"
-        android:background="@color/gris"
-        android:backgroundTintMode="add"
         android:text="REGISTER"
         app:layout_constraintTop_toBottomOf="@+id/TextContra"
         tools:layout_editor_absoluteX="0dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
